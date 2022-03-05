@@ -10,6 +10,7 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
 RUN git clone -b Zee-Userbot https://github.com/Kykoubot/Zee-Userbot /home/Zee-Userbot/ \
     && chmod 777 /home/Zee-Userbot \
     && mkdir /home/Zee-Userbot/bin/
+WORKDIR /home/Zee-Userbot/
 COPY ./sample_config.env ./config.env* /home/Zee-Userbot/
 RUN pip install -r requirements.txt
 CMD [ "bash", "./start" ]
