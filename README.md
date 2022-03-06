@@ -1,9 +1,9 @@
 <p align="center"><img src="https://telegra.ph/file/43d1fd4fa4043789c66c2.jpg" alt="ICON" width="250" height="250"/></p>
  <h1 align="center"><img src="./userbot/resources/GeezFire.gif" width="35px"> 𝐙𝐞𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 <img src="./userbot/resources/GeezFire.gif" width="35px"></h1>
 
-# Ubot by zeasan
+
 <a href="https://t.me/dbzea"> <img src="https://img.shields.io/badge/Support Telegram-blue?&logo=telegram" alt="Group on Telegram" /> </a><br>
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/mrismanaziz/Man-Userbot)
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/Kykoubot/Zee-Userbot)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green)](https://GitHub.com/kykoubot/Zee-Userbot/graphs/commit-activity)
 [![CodeFactor](https://www.codefactor.io/repository/github/mrismanaziz/Man-Userbot/badge)](https://www.codefactor.io/repository/github/mrismanaziz/Man-Userbot)
 [![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/kykoubot/Zee-Userbot/dashboard)
@@ -84,9 +84,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 
 </details>
 
-## Updates & Support
+## Update Support
 
-Follow Channel [@Storezeastore](https://t.me/Storezeastore) untuk info Update bot dan Gabung Group [@Dbzea](https://t.me/Dbzea) untuk untuk diskusi, pelaporan bug, dan bantuan tentang Zee-Userbot.
+Follow Channel [@Storezeastore](https://t.me/Storezeastore) untuk info Update bot.
 
 #### Special Thanks To [Everyone](https://github.com/kykoubot/Zee-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
 -  [AdekMaulana](https://github.com/adekmaulana) : ProjectBish
