@@ -65,7 +65,7 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await xx.edit(
-        f"**✧Zee-Userbot✧**\n"
+        f"**Zee-Userbot!!🔥**\n"
         f"• **Pinger** - `%sms`\n"
         f"• **Uptime -** `{uptime}` \n"
         f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
@@ -89,10 +89,10 @@ async def _(ping):
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    lping = await edit_or_reply(ping, "**★ PING ★**")
-    await lping.edit("**★★ PING ★★**")
-    await lping.edit("**★★★ PING ★★★**")
-    await lping.edit("**★★★★ PING ★★★★**")
+    lping = await edit_or_reply(ping, "**★**")
+    await lping.edit("**★★**")
+    await lping.edit("**★★★**")
+    await lping.edit("**★★★★**")
     await lping.edit("**✦҈͜͡➳ PONG!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
@@ -110,18 +110,18 @@ async def _(ping):
 async def _(pong):
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    kopong = await edit_or_reply(pong, "**『⍟AKU』**")
-    await kopong.edit("**◆◈SAYANG◈◆**")
+    kopong = await edit_or_reply(pong, "**AKU**")
+    await kopong.edit("**SAYANG**")
     await kopong.edit("**KAMU**")
-    await kopong.edit("**☬TAPI BOONG HAHA☬**")
+    await kopong.edit("**TAPI BOONG HAHA**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
     await kopong.edit(
         f"**✲ BOMB** "
         f"\n HEYAAA `%sms` \n"
-        f"**✲ KAGET GA LUH** "
-        f"\n ANAK ASU『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
+        f"**✲ KENALIN NIH SI PALING CAKEP** "
+        f"\n TUAN『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
     )
 
 
@@ -154,7 +154,7 @@ async def _(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await kping.edit(
-        f"**NGENTOT!! 🐨**\n**KAMPANG** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**ENAK!! 🐨**\n**NJIRR** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
