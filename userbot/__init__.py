@@ -198,7 +198,7 @@ ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "🔸")
 INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "✘")
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "▪️")
+ICON_HELP = os.environ.get("ICON_HELP", "✧")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -214,15 +214,15 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot version
-BOT_VER = os.environ.get("BOT_VER", "3.1.3")
+BOT_VER = os.environ.get("BOT_VER", "3.1.7")
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/43d1fd4fa4043789c66c2.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/9e9ba8a0247915a808f28.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/43d1fd4fa4043789c66c2.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/9e9ba8a0247915a808f28.jpg"
 )
 
 # Picture For VCPLUGIN
