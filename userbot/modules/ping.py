@@ -65,11 +65,10 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await xx.edit(
-        f"**PONG🏓..**\n"
-        f"• **Zee-Userbot**\n"
-        f"• **Pinger** · `%sms`\n"
-        f"• **Uptime ·** `{uptime}` \n"
-        f"• **Master ·** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**PONG🏓..!!**\n"
+        f"**▹ Pinger ·** `%sms`\n"
+        f"**▹ Uptime ·** `{uptime}` \n"
+        f"**▹ Master ·** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
