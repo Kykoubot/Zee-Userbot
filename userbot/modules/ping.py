@@ -19,12 +19,12 @@ from userbot.events import register
 from userbot.utils import edit_or_reply, humanbytes, man_cmd
 
 absen = [
-    "**Hadir bang** 😁",
-    "**Hadir kak** 😉",
-    "**Hadir dong** 😁",
-    "**Hadir ganteng** 🥵",
-    "**Hadir bro** 😎",
-    "**Hadir kak maap telat** 🥺",
+    "**Saya Hadir** 😁",
+    "**Absen Gweh Juga** 😉",
+    "**Cok Ikutan** 😁",
+    "**Hadir Ganteng** 😐",
+    "**Hadir Kawan** 😎",
+    "**Hadir Bang Maap Telat** 😴",
 ]
 
 
@@ -65,10 +65,10 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await xx.edit(
-        f"**Zee-Userbot!!🔥**\n"
-        f"• **Pinger** - `%sms`\n"
-        f"• **Uptime -** `{uptime}` \n"
-        f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**◃ Zee-Userbot ▹**\n"
+        f"• *ᴘɪɴɢᴇʀ* - `%sms`\n"
+        f"• *ᴜᴘᴛɪᴍᴇ* - `{uptime}` \n"
+        f"• *ᴍᴀꜱᴛᴇʀ* - [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
