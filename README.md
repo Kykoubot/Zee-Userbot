@@ -10,7 +10,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/mrismanaziz/man-userbot)](https://hub.docker.com/r/mrismanaziz/man-userbot/tags)
 [![GitHub Forks](https://img.shields.io/github/forks/kykoubot/Zee-Userbot?&logo=github)](https://github.com/kykoubot/Zee-Userbot/fork)
 [![GitHub Stars](https://img.shields.io/github/stars/kykoubot/Zee-Userbot?&logo=github)](https://github.com/kykoubot/Zee-Userbot/stargazers)
-
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=Kykoubot&repo=Zee-Userbot&theme=dark)
 Zee-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
