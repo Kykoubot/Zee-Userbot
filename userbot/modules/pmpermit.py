@@ -21,14 +21,11 @@ from userbot.utils import edit_delete, edit_or_reply
 
 DEF_UNAPPROVED_MSG = (
     "╔═════════════════════╗\n"
-    "│ㅤ ✧𝐀𝐓𝐓𝐄𝐍𝐓𝐈𝐎𝐍 𝐏𝐋𝐄𝐀𝐒𝐄✧ㅤ   \n"
+    "│ㅤ ＺＥＥ－ＵＳＥＲＢＯＴㅤ   \n"
     "╚═════════════════════╝\n"
-    "• Tuan saya belum menyetujui anda untuk PM.\n"
-    "• Tunggu sampai PM kamu di terima.\n"
-    "• Jangan SPAM!, atau kamu akan otomatis diblokir.\n"
-    "╔═════════════════════╗\n"
-    "│𝐏𝐞𝐬𝐚𝐧 𝐨𝐭𝐨𝐦𝐚𝐭𝐢𝐬 𝐛𝐲 • 𝐙𝐞𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭✧\n"  
-    "╚═════════════════════╝\n"
+    "• Saya Belum Menerima Pesan Kamu.\n"
+    "• Tunggu Sampai Pesan Kamu Di Terima.\n"
+    "• Jangan SPAM!, Nanti Kena Blockir!.\n"
 )
 
 
