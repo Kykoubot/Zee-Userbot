@@ -9,7 +9,7 @@ from userbot.utils import edit_or_reply, man_cmd
 async def _(event):
     await event.client.send_message(
         event.chat_id,
-        "**Assalamualaikum Dulu Biar Sopan**",
+        "**Assalamualaikum Yagesyak..**",
         reply_to=event.reply_to_msg_id,
     )
     await event.delete()
@@ -51,17 +51,17 @@ async def _(event):
 
 @man_cmd(pattern="j(?: |$)(.*)")
 async def _(event):
-    xx = await edit_or_reply(event, "**JAKA SEMBUNG BAWA GOLOK**")
+    xx = await edit_or_reply(event, "**ABANG GANTENG NAMANYA UCOK**")
     sleep(3)
-    await xx.edit("**NIMBRUNG GOBLOKK!!!🔥**")
+    await xx.edit("**NIMBRUNG COKKK!!!🔥**")
 
 
 @man_cmd(pattern="k(?: |$)(.*)")
 async def _(event):
     me = await event.client.get_me()
-    xx = await edit_or_reply(event, f"**Hallo KIMAAKK SAYA {me.first_name}**")
+    xx = await edit_or_reply(event, f"**Hallo BABU {me.first_name}**")
     sleep(2)
-    await xx.edit("**LU SEMUA NGENTOT 🔥**")
+    await xx.edit("**LU SEMUA ASU 🔥**")
 
 
 @man_cmd(pattern="ass(?: |$)(.*)")
@@ -75,7 +75,7 @@ CMD_HELP.update(
     {
         "salam": f"**Plugin : **`salam`\
         \n\n  •  **Syntax :** `{cmd}p`\
-        \n  •  **Function : **Assalamualaikum Dulu Biar Sopan..\
+        \n  •  **Function : **Assalamualaikum Yagesyak..\
         \n\n  •  **Syntax :** `{cmd}pe`\
         \n  •  **Function : **salam Kenal dan salam\
         \n\n  •  **Syntax :** `{cmd}l`\
@@ -89,9 +89,9 @@ CMD_HELP.update(
         \n\n  •  **Syntax :** `{cmd}sayang`\
         \n  •  **Function : **Kata I Love You.\
         \n\n  •  **Syntax :** `{cmd}k`\
-        \n  •  **Function : **LU SEMUA NGENTOT 🔥\
+        \n  •  **Function : **LU SEMUA ASU 🔥\
         \n\n  •  **Syntax :** `{cmd}j`\
-        \n  •  **Function : **NIMBRUNG GOBLOKK!!!🔥\
+        \n  •  **Function : **NIMBRUNG COKK!!!🔥\
     "
     }
 )
