@@ -530,7 +530,7 @@ CMD_HELP.update(
         \n  •  **Function : **Membuat meme trapcard\
         \n\n  •  **Syntax :** `{cmd}tweet`\
         \n  •  **Function : **Membuat Tweet dari akun twitter\
-        \n  •  **Example  : **{cmd}tweet @mrismanaziz.ganteng (harus pake . [titik])\
+        \n  •  **Example  : **{cmd}tweet @zeafeya.ganteng (harus pake . [titik])\
     "
     }
 )
