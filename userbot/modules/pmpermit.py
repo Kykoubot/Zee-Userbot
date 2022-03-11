@@ -23,7 +23,7 @@ DEF_UNAPPROVED_MSG = (
     "**• ✨ ＺＥＥ－ＵＳＥＲＢＯＴ ✨**\n"
     "• Saya Belum Menerima Pesan Kamu.\n"
     "• Tunggu Sampai Pesan Kamu Di Terima.\n"
-    "• Jangan SPAM!, Nanti Kena Blockir!.\n"
+    "• Jangan SPAM!, Nanti Kena Blokir!.\n"
 )
 
 
