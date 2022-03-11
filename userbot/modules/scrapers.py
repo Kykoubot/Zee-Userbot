@@ -900,7 +900,7 @@ CMD_HELP.update(
         \n\n  •  **Syntax :** `{cmd}google` <flags> <query>\
         \n  •  **Function : **Untuk Melakukan pencarian di google (default 5 hasil pencarian)\
         \n  •  **Flags :** `-l` **= Untuk jumlah hasil pencarian.**\
-        \n  •  **Example :** `{cmd}google -l4 mrismanaziz` atau `{cmd}google mrismanaziz`\
+        \n  •  **Example :** `{cmd}google -14 zeafeya` atau `{cmd}google zeafeya`\
     "
     }
 )
