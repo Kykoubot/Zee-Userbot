@@ -20,11 +20,11 @@ from userbot.events import man_cmd
 from userbot.utils import edit_delete, edit_or_reply
 
 DEF_UNAPPROVED_MSG = (
-    "**ㅤㅤ⊘ ATTENTION PLEASE ⊘**\n"
+    "**ㅤㅤㅤ⊘ ATTENTION PLEASE ⊘**\n"
     "▹ Saya Belum Menerima Pesan Kamu.\n"
     "▹ Tunggu Sampai Pesan Kamu Di Terima.\n"
     "▹ Jangan SPAM!, Nanti Kena Blokir!.\n"
-    "**ㅤ⇒ ＺＥＥ－ＵＳＥＲＢＯＴ ⇐**\n"
+    "**ㅤㅤ⇒ ＺＥＥ－ＵＳＥＲＢＯＴ ⇐**\n"
 )
 
 
