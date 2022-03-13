@@ -14,7 +14,7 @@ from userbot import CMD_HANDLER as cmd
 from userbot import MAN2, MAN3, MAN4, MAN5, bot, branch
 
 MSG_ON = """
- 🔥**Zee-Userbot Berhasil Di Deploy**🔥
+ ⚡**Zee-Userbot Berhasil Di Deploy**⚡
 ━━
 ➥ **Userbot Version -** `{}@{}`
 ➥ **Ketik** `{}ping` **untuk Mengecheck Bot**
