@@ -1,4 +1,3 @@
-<p align="center"><img src="https://telegra.ph/file/717b5083869a6053f01cd.jpg" alt="ICON" width="250" height="250"/></p>
  <h1 align="center"><img src="./userbot/resources/GeezFire.gif" width="35px"> 𝐙𝐞𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 <img src="./userbot/resources/GeezFire.gif" width="35px"></h1>
 
 
