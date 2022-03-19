@@ -1,10 +1,10 @@
-FROM python:3.9.10-slim-buster
+FROM python:3.9-slim-buster
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends \
     curl \
     git \
     ffmpeg
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_current.x | bash - && \
     apt-get install -y nodejs && \
     npm i -g npm
 RUN git clone -b Zee-Userbot https://github.com/Kykoubot/Zee-Userbot /home/Zee-Userbot/ \
