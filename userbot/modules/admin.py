@@ -3,9 +3,9 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
-# Recode by @zeafeya
-# FROM Zee-Userbot <https://github.com/kykoubot/Zee-Userbot>
-# t.me/Dbzea & t.me/Storezeastore
+# Recode by @mrismanaziz
+# FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
+# t.me/SharingUserbot & t.me/Lunatic0de
 
 from asyncio import sleep
 
@@ -246,7 +246,7 @@ async def spider(spdr):
     if user.id in DEVS:
         return await man.edit("**Gagal Mute, dia adalah Pembuat Saya 🤪**")
     if user.id in WHITELIST:
-        return await man.edit("**Gagal Mute, dia adalah admin @Dbzea 🤪**")
+        return await man.edit("**Gagal Mute, dia adalah admin @SharingUserbot 🤪**")
     await man.edit(
         r"\\**#Muted_User**//"
         f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
@@ -302,7 +302,7 @@ async def unmoot(unmot):
         return await edit_delete(man, "**Terjadi ERROR!**")
 
 
-@man_handler()
+@man_handler(incoming=True)
 async def muter(moot):
     try:
         from userbot.modules.sql_helper.gmute_sql import is_gmuted
@@ -379,7 +379,7 @@ async def gspider(gspdr):
     if user.id in DEVS:
         return await man.edit("**Gagal Global Mute, Dia Adalah Pembuat Saya 🤪**")
     if user.id in WHITELIST:
-        return await man.edit("**Gagal Mute, dia adalah admin @Dbzea 🤪**")
+        return await man.edit("**Gagal Mute, dia adalah admin @SharingUserbot 🤪**")
     await man.edit("**Berhasil Membisukan Pengguna!**")
     if gmute(user.id) is False:
         await edit_delete(gspdr, "**ERROR! Pengguna Sudah Dibisukan.**")
@@ -467,7 +467,7 @@ async def get_admin(show):
         ):
             if not user.deleted:
                 link = f'<a href="tg://user?id={user.id}">{user.first_name}</a>'
-                mentions += f"\n🔰 {link}"
+                mentions += f"\n⚜️ {link}"
             else:
                 mentions += f"\n⚜ Akun Terhapus <code>{user.id}</code>"
     except ChatAdminRequiredError as err:
@@ -494,7 +494,7 @@ async def pin(event):
 
 @man_cmd(pattern="unpin( all|$)")
 @register(pattern=r"^\.cunpin( all|$)", sudo=True)
-async def pin(event):
+async def unpin(event):
     to_unpin = event.reply_to_msg_id
     options = (event.pattern_match.group(1)).strip()
     if not to_unpin and options != "all":
