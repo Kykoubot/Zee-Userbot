@@ -3,9 +3,9 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
-# Recode by @Zeafeya
-# FROM Zee-Userbot <https://github.com/kykoubot/Zee-Userbot>
-# t.me/Dbzea & t.me/Storezeastore
+# Recode by @mrismanaziz
+# FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
+# t.me/SharingUserbot & t.me/Lunatic0de
 
 import sys
 
@@ -41,5 +41,8 @@ def __list_all_modules():
 
 
 ALL_MODULES = sorted(__list_all_modules())
-LOGS.info("Modules To Load : %s", str(ALL_MODULES))
+LOGS.info("Starting To Load Plugins")
+LOGS.info(
+    f"Succesfully Load {len(ALL_MODULES)} Plugins",
+)
 __all__ = ALL_MODULES + ["ALL_MODULES"]
