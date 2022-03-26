@@ -4,7 +4,7 @@
 <a href="https://t.me/dbzea"> <img src="https://img.shields.io/badge/Support Telegram-blue?&logo=telegram" alt="Group on Telegram" /> </a><br>
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/Kykoubot/Zee-Userbot)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green)](https://GitHub.com/kykoubot/Zee-Userbot/graphs/commit-activity)
-[![CodeFactor](https://www.codefactor.io/repository/github/mrismanaziz/Man-Userbot/badge)](https://www.codefactor.io/repository/github/mrismanaziz/Man-Userbot)
+[![CodeFactor](https://www.codefactor.io/repository/github/Kykoubot/Zee-Userbot/badge)](https://www.codefactor.io/repository/github/Kykoubot/Zee-Userbot)
 [![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/kykoubot/Zee-Userbot/dashboard)
 [![Docker Pulls](https://img.shields.io/docker/pulls/mrismanaziz/man-userbot)](https://hub.docker.com/r/mrismanaziz/man-userbot/tags)
 [![GitHub Forks](https://img.shields.io/github/forks/kykoubot/Zee-Userbot?&logo=github)](https://github.com/kykoubot/Zee-Userbot/fork)
