@@ -7,7 +7,7 @@
 #
 # Recode by @mrismanaziz
 # FROM Zee-Userbot <https://github.com/kykoubot/Zee-Userbot>
-# t.me/dbzea & t.me/Storezeastore
+# t.me/Dbzea & t.me/Storezeastore
 #
 
 import io
@@ -25,7 +25,7 @@ from PIL import Image
 
 from userbot import BOT_VER, BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
-from userbot import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME, SUDO_USERS, branch
+from userbot import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME, branch
 from userbot.utils import edit_or_reply, man_cmd, time_formatter
 
 # ================= CONSTANT =================
@@ -40,10 +40,8 @@ useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) 
 opener.addheaders = [("User-agent", useragent)]
 
 
-@man_cmd(pattern="sleep ([0-9]+)$")
+@man_cmd(pattern="sleep ([0-9]+)$", allow_sudo=False)
 async def sleepybot(time):
-    if time.sender_id in SUDO_USERS:
-        return
     counter = int(time.pattern_match.group(1))
     xx = await edit_or_reply(time, "`Saya mengantuk dan tertidur...`")
     if BOTLOG_CHATID:
@@ -56,11 +54,9 @@ async def sleepybot(time):
     await xx.edit("**Oke, saya sudah bangun sekarang.**")
 
 
-@man_cmd(pattern="shutdown$")
+@man_cmd(pattern="shutdown$", allow_sudo=False)
 async def shutdown_bot(event):
     if event.fwd_from:
-        return
-    if event.sender_id in SUDO_USERS:
         return
     if BOTLOG_CHATID:
         await event.client.send_message(
@@ -75,10 +71,8 @@ async def shutdown_bot(event):
         sys.exit(0)
 
 
-@man_cmd(pattern="restart$")
+@man_cmd(pattern="restart$", allow_sudo=False)
 async def restart_bot(event):
-    if event.sender_id in SUDO_USERS:
-        return
     await edit_or_reply(event, "**Zee-Userbot Berhasil di Restart**")
     if BOTLOG_CHATID:
         await event.client.send_message(
@@ -93,7 +87,7 @@ async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n✣ [Userbot Repo](https://github.com/Kykoubot/Zee-Userbot/blob/Zee-Userbot/README.md)"
+        "\n✣ [Userbot Repo](https://github.com/kykoubot/Zee-Userbot/blob/Zee-Userbot/README.md)"
         "\n✣ [Video Tutorial](https://youtu.be/tTDaPKsGC1I)"
         "\n✣ [List Variabel Heroku untuk Zee-Userbot](https://telegra.ph/List-Variabel-Heroku-untuk-Man-Userbot-09-22)"
         "\n✣ [Setup Guide - Basic](https://mrismanaziz.medium.com/cara-memasang-userbot-telegram-repo-man-userbot-deploy-di-heroku-c56d1f8b5537)"
@@ -122,10 +116,10 @@ async def repo_is_here(event):
         f"**Hey**, __I am using__ 🔥 **Zee-Userbot** 🔥\n\n"
         f"      __Thanks For Using me__\n\n"
         f"✣ **Userbot Version :** `{BOT_VER}@{branch}`\n"
-        f"✣ **Group Support :** [Zebo Support](t.me/dbzea)\n"
-        f"✣ **Channel Zee :** [Zea Store](t.me/storezeastore)\n"
-        f"✣ **Owner Repo :** [Zeasan](t.me/zeafeya)\n"
-        f"✣ **Repo :** [Zee-Userbot](https://github.com/Kykoubot/Zee-Userbot)\n"
+        f"✣ **Group Support :** [Zebo Support](t.me/Dbzea)\n"
+        f"✣ **Channel Zee :** [Zee Project](t.me/Storezeastore)\n"
+        f"✣ **Owner Repo :** [ZeaFeya](t.me/zeafeya)\n"
+        f"✣ **Repo :** [Zee-Userbot](https://github.com/kykoubot/Zee-Userbot)\n"
     )
 
 
