@@ -9,7 +9,7 @@ import csv
 import random
 from datetime import datetime
 from math import sqrt
-from random import choice
+from secrets import choice
 
 from emoji import emojize
 from telethon import functions
@@ -38,7 +38,6 @@ from telethon.tl.types import (
 )
 from telethon.utils import get_input_location
 
-from userbot import BLACKLIST_CHAT
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
 from userbot.events import register
@@ -105,33 +104,12 @@ async def _(event):
                     x.first_name, x.id, x.id
                 )
             else:
-                mentions += "\n 🔰 [{}](tg://user?id={}) `{}`".format(
+                mentions += "\n ⚜️ [{}](tg://user?id={}) `{}`".format(
                     x.first_name, x.id, x.id
                 )
     except Exception as e:
         mentions += " " + str(e) + "\n"
     await edit_or_reply(event, mentions)
-
-
-@man_cmd(pattern="kickme$")
-async def kickme(leave):
-    if leave.chat_id in BLACKLIST_CHAT:
-        return await edit_or_reply(
-            leave, "**Perintah ini Dilarang digunakan di Group ini**"
-        )
-    user = await leave.client.get_me()
-    await edit_or_reply(leave, f"`{user.first_name} has left this group, bye!!`")
-    await leave.client.kick_participant(leave.chat_id, "me")
-
-
-@man_cmd(pattern="kikme$")
-async def kikme(leave):
-    if leave.chat_id in BLACKLIST_CHAT:
-        return await edit_or_reply(
-            leave, "**Perintah ini Dilarang digunakan di Group ini**"
-        )
-    await edit_or_reply(leave, "**GC NYA JELEK GOBLOK KELUAR DULU AH CROTT** 🥴")
-    await leave.client.kick_participant(leave.chat_id, "me")
 
 
 @register(pattern=r"^\.absenall$", own=True)
@@ -448,11 +426,11 @@ async def _(event):
 async def get_users(event):
     man_ = event.text[11:]
     chat_man = man_.lower()
-    restricted = ["@dbzea", "@dbzea"]
+    restricted = ["@Dbzea", "@Dbzea"]
     if chat_man in restricted:
         await edit_or_reply(event, "**Anda tidak dapat Mengundang Anggota dari sana.**")
         await event.client.send_message(
-            -1001473548283, "**Maaf Telah Mencuri Member dari Sini.**"
+            -1001234685537, "**Maaf Telah Mencuri Member dari Sini.**"
         )
         return
     if not man_:
@@ -575,24 +553,10 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "kickme": f"**Plugin : **`kickme`\
-        \n\n  •  **Syntax :** `{cmd}kickme`\
-        \n  •  **Function : **Keluar grup dengan menampilkan pesan Master has left this group, bye!!\
-        \n\n  •  **Syntax :** `{cmd}leave`\
-        \n  •  **Function : **Keluar grup dengan menampilkan pesan Master Telah Meninggalkan Grup, bye !!\
-        \n\n  •  **Syntax :** `{cmd}kikme`\
-        \n  •  **Function : **Keluar grup dengan menampilkan pesan GC NYA JELEK GOBLOK KELUAR DULU AH CROTT 🥴\
-    "
-    }
-)
-
-
-CMD_HELP.update(
-    {
         "link": f"**Plugin : **`link`\
         \n\n  •  **Syntax :** `{cmd}link` <username/userid> <opsional teks> (atau) Reply pesan .link <teks opsional>\
         \n  •  **Function : **Membuat link permanen ke profil pengguna dengan teks ubahsuaian opsional.\
-        \n  •  **Contoh : **{cmd}link @Zeafeya Ganteng\
+        \n  •  **Contoh : **{cmd}link @zeafeya Ganteng\
     "
     }
 )
