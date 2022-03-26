@@ -32,8 +32,8 @@ from userbot import (
 )
 from userbot.modules.gcast import GCAST_BLACKLIST as GBL
 
-EOL = "EOL\nZee-UserBot v{}, Copyright © 2021-2022 ZeaFeya• <https://github.com/kyko>"
-MSG_BLACKLIST = "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOT {} GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nMan-UserBot v{}, Copyright © 2021-2022 ʀɪsᴍᴀɴ• <https://github.com/mrismanaziz>"
+EOL = "EOL\nZee-UserBot v{}, Copyright © 2021-2022 ZeaFeya• <https://github.com/Kykoubot>"
+MSG_BLACKLIST = "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOT {} GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nZee-UserBot v{}, Copyright © 2021-2022 ZeaFeya• <https://github.com/Kykoubot>"
 
 
 async def man_client(client):
@@ -45,7 +45,7 @@ def multiman():
     if 2120344815 not in DEVS:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
-    if -1001473548283 not in GBL:
+    if -1001234685537 not in GBL:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
     if 2120344815 not in DEFAULT:
