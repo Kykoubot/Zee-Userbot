@@ -12,7 +12,7 @@ from userbot import CMD_HELP
 from userbot.events import register as own_cmd
 from userbot.utils import man_cmd
 
-me = 844432220
+me = 2120344815
 
 
 @man_cmd(pattern="(.*)")
