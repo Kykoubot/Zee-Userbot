@@ -3,13 +3,13 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
-# ReCode by @zeafeya
+# ReCode by @mrismanaziz
 # FROM Zee-Userbot <https://github.com/kykoubot/Zee-Userbot>
 # t.me/Dbzea & t.me/Storezeastore
 
-import random
 import time
 from datetime import datetime
+from secrets import choice
 
 from speedtest import Speedtest
 
@@ -19,12 +19,12 @@ from userbot.events import register
 from userbot.utils import edit_or_reply, humanbytes, man_cmd
 
 absen = [
-    "**Saya Hadir** 😁",
-    "**Absen Gweh Juga** 😉",
-    "**Cok Ikutan** 😁",
-    "**Hadir Ganteng** 😐",
-    "**Hadir Kawan** 😎",
-    "**Hadir Bang Maap Telat** 😴",
+    "**Hadir bang** 😁",
+    "**Hadir kak** 😉",
+    "**Hadir dong** 😁",
+    "**Hadir ganteng** 🥵",
+    "**Hadir sayang** 😎",
+    "**Hadir gua cokkk** 🥺",
 ]
 
 
@@ -57,20 +57,19 @@ async def get_readable_time(seconds: int) -> str:
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(ping, "**.**")
-    await xx.edit("**..**")
-    await xx.edit("**...**")
-    await xx.edit("**....**")
+    xx = await edit_or_reply(ping, "**･**")
+    await xx.edit("**･･**")
+    await xx.edit("**･･･**")
+    await xx.edit("**････**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await xx.edit(
-        f"**PONG🏓..!!**\n"
-        f"**▹ Pinger ·** `%sms`\n"
-        f"**▹ Uptime ·** `{uptime}` \n"
-        f"**▹ Master ·** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**PONG!!🏓**\n"
+        f"▹ **Pinger** - `%sms`\n"
+        f"▹ **Uptime -** `{uptime}` \n"
+        f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
-
 
 
 @man_cmd(pattern="xping$")
@@ -81,7 +80,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xping.edit(
-        f"**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**PONG!! 🍭**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
@@ -110,18 +109,18 @@ async def _(ping):
 async def _(pong):
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    kopong = await edit_or_reply(pong, "**AKU**")
-    await kopong.edit("**SAYANG**")
-    await kopong.edit("**KAMU**")
-    await kopong.edit("**TAPI BOONG HAHA**")
+    kopong = await edit_or_reply(pong, "**『⍟𝐊𝐎𝐍𝐓𝐎𝐋』**")
+    await kopong.edit("**◆◈𝐊𝐀𝐌𝐏𝐀𝐍𝐆◈◆**")
+    await kopong.edit("**𝐏𝐄𝐂𝐀𝐇𝐊𝐀𝐍 𝐁𝐈𝐉𝐈 𝐊𝐀𝐔 𝐀𝐒𝐔**")
+    await kopong.edit("**☬𝐒𝐈𝐀𝐏 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 𝐌𝐄𝐍𝐔𝐌𝐁𝐔𝐊 𝐀𝐒𝐔☬**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
     await kopong.edit(
-        f"**✲ BOMB** "
-        f"\n HEYAAA `%sms` \n"
-        f"**✲ KENALIN NIH SI PALING CAKEP** "
-        f"\n TUAN『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
+        f"**✲ 𝙺𝙾𝙽𝚃𝙾𝙻 𝙼𝙴𝙻𝙴𝙳𝚄𝙶** "
+        f"\n ⫸ ᴷᵒⁿᵗᵒˡ `%sms` \n"
+        f"**✲ 𝙱𝙸𝙹𝙸 𝙿𝙴𝙻𝙴𝚁** "
+        f"\n ⫸ ᴷᵃᵐᵖᵃⁿᵍ『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
     )
 
 
@@ -154,7 +153,7 @@ async def _(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await kping.edit(
-        f"**ENAK!! 🐨**\n**NJIRR** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**AHH!! 🐨**\n**ENAK** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
@@ -192,16 +191,16 @@ async def _(speed):
 @man_cmd(pattern="pong$")
 async def _(pong):
     start = datetime.now()
-    xx = await edit_or_reply(pong, "`Sepong.....💫`")
+    xx = await edit_or_reply(pong, "`Sepong.....🏓`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await xx.edit("💫 **Ping!**\n`%sms`" % (duration))
+    await xx.edit("🏓 **Ping!**\n`%sms`" % (duration))
 
 
 # KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
-@register(incoming=True, from_users=2120344815, pattern=r"^.absen$")
-async def zeafeya(ganteng):
-    await ganteng.reply(random.choice(absen))
+@register(pattern=r"^\.absen$", sudo=True)
+async def Zeafeya(ganteng):
+    await ganteng.reply(choice(absen))
 
 
 # JANGAN DI HAPUS GOBLOK 😡 LU COPY AJA TINGGAL TAMBAHIN
