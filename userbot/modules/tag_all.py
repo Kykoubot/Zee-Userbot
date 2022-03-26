@@ -2,13 +2,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #
-# ReCode by @zeafeya
-# FROM Zee-Userbot <https://github.com/zeafeya/Zee-Userbot>
+# ReCode by @mrismanaziz
+# FROM Zee-Userbot <https://github.com/kykoubot/Zee-Userbot>
 # t.me/Dbzea & t.me/Storezeastore
 
 import asyncio
-import random
 import re
+from secrets import choice
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
@@ -52,7 +52,7 @@ async def _(event):
         await event.delete()
         tags = list(
             map(
-                lambda m: f"[{random.choice(emoji)}](tg://user?id={m.id})",
+                lambda m: f"[{choice(emoji)}](tg://user?id={m.id})",
                 await event.client.get_participants(chat),
             ),
         )
@@ -64,7 +64,7 @@ async def _(event):
             if len(current_pack) == 5:
                 tags = list(
                     map(
-                        lambda m: f"[{random.choice(emoji)}](tg://user?id={m.id})",
+                        lambda m: f"[{choice(emoji)}](tg://user?id={m.id})",
                         current_pack,
                     ),
                 )
