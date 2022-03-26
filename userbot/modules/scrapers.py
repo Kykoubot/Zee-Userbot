@@ -6,8 +6,8 @@
 # thanks to the owner of X-tra-Telegram for tts fix
 #
 # Recode by @mrismanaziz
-# FROM Man-Userbot
-# t.me/SharingUserbot
+# FROM Zee-Userbot
+# t.me/Dbzea
 #
 """ Userbot module containing various scrapers. """
 
@@ -27,6 +27,7 @@ import barcode
 import emoji
 import qrcode
 import requests
+from aiohttp import ClientSession
 from barcode.writer import ImageWriter
 from bs4 import BeautifulSoup
 from googletrans import LANGUAGES, Translator
@@ -317,7 +318,7 @@ async def _(event):
         translated = translator.translate(text, dest=lan)
         after_tr_text = translated.text
         output_str = """**DITERJEMAHKAN** dari `{}` ke `{}`
-{}""".format(
+`{}`""".format(
             translated.src, lan, after_tr_text
         )
         await xx.edit(output_str)
@@ -404,6 +405,12 @@ async def download_video(v_url):
     video = False
     audio = False
 
+    if "tiktok.com" in url:
+        async with ClientSession() as ses, ses.head(
+            url, allow_redirects=True, timeout=5
+        ) as head:
+            url = str(head.url)
+
     if "audio" in dl_type:
         opts = {
             "format": "bestaudio",
@@ -484,7 +491,7 @@ async def download_video(v_url):
     except ExtractorError:
         return await edit_delete(xx, "`There was an error during info extraction.`")
     except Exception as e:
-        return await edit_delete(xx, f"{str(type(e)): {e}}")
+        return await edit_delete(xx, f"{str(type(e))}: {str(e)}")
     c_time = time.time()
     if audio:
         await xx.edit(
@@ -900,7 +907,7 @@ CMD_HELP.update(
         \n\n  •  **Syntax :** `{cmd}google` <flags> <query>\
         \n  •  **Function : **Untuk Melakukan pencarian di google (default 5 hasil pencarian)\
         \n  •  **Flags :** `-l` **= Untuk jumlah hasil pencarian.**\
-        \n  •  **Example :** `{cmd}google -14 zeafeya` atau `{cmd}google zeafeya`\
+        \n  •  **Example :** `{cmd}google -l4 Zeafeya` atau `{cmd}google Zeafeya`\
     "
     }
 )
