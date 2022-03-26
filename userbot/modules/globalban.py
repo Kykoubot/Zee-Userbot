@@ -1,5 +1,5 @@
 # Copyright (C) 2020 Catuserbot <https://github.com/sandy1709/catuserbot>
-# Ported by @zeafeya
+# Ported by @mrismanaziz
 # FROM Zee-Userbot <https://github.com/kykoubot/Zee-Userbot>
 # t.me/Dbzea
 
@@ -49,13 +49,13 @@ async def gban(event):
     if not user:
         return
     if user.id == (await event.client.get_me()).id:
-        await gbun.edit("**Ngapain NgeGban diri sendiri Goblok 🐽**")
+        await gbun.edit("**Ngapain NgeGban diri sendiri 🐽**")
         return
     if user.id in DEVS:
         await gbun.edit("**Gagal GBAN karena dia adalah Pembuat saya 🗿**")
         return
     if user.id in WHITELIST:
-        await gbun.edit("**Gagal GBAN karena dia adalah admin @SharingUserbot 🗿**")
+        await gbun.edit("**Gagal GBAN karena dia adalah admin @Dbzea 🗿**")
         return
     if gban_sql.is_gbanned(user.id):
         await gbun.edit(
@@ -149,29 +149,30 @@ async def gablist(event):
     if event.fwd_from:
         return
     gbanned_users = gban_sql.get_all_gbanned()
-    GBANNED_LIST = "**List Global Banned Saat Ini**\n"
+    GBANNED_LIST = "**List Global Banned Saat Ini**\n\n"
     if len(gbanned_users) > 0:
         for a_user in gbanned_users:
             if a_user.reason:
-                GBANNED_LIST += f"👉 [{a_user.chat_id}](tg://user?id={a_user.chat_id}) **Reason** `{a_user.reason}`\n"
+                GBANNED_LIST += f"❏ User ID: [{a_user.chat_id}](tg://user?id={a_user.chat_id})\n└ Reason: {a_user.reason}\n\n"
             else:
-                GBANNED_LIST += (
-                    f"👉 [{a_user.chat_id}](tg://user?id={a_user.chat_id}) `No Reason`\n"
-                )
-    if len(gbanned_users) >= 4096:
+                GBANNED_LIST += f"❏ User ID: [{a_user.chat_id}](tg://user?id={a_user.chat_id})\n└ No Reason\n\n"
+    else:
+        GBANNED_LIST = "Belum ada Pengguna yang Di-Gban"
+    if len(GBANNED_LIST) > 4096:
         with BytesIO(str.encode(GBANNED_LIST)) as fileuser:
-            fileuser.name = "list-gban.txt"
+            fileuser.name = "list-gban.text"
             await event.client.send_file(
                 event.chat_id,
                 fileuser,
                 force_document=True,
                 thumb="userbot/resources/logo.jpg",
                 caption="**List Global Banned**",
+                reply_to=event.reply_to_msg_id,
                 allow_cache=False,
             )
+            await event.delete()
     else:
-        GBANNED_LIST = "Belum ada Pengguna yang Di-Gban"
-    await edit_or_reply(event, GBANNED_LIST)
+        await edit_or_reply(event, GBANNED_LIST)
 
 
 @chataction()
@@ -193,9 +194,9 @@ async def _(event):
                 pass
 
 
-# Ported by @zeafeya
+# Ported by @mrismanaziz
 # FROM Zee-Userbot <https://github.com/kykoubot/Zee-Userbot>
-# t.me/Storezeastore
+# t.me/Dbzea
 
 
 CMD_HELP.update(
