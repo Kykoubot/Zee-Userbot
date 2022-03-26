@@ -5,12 +5,12 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 #
-# Ported by @zeafeya
+# Ported by @mrismanaziz
 # FROM Zee-Userbot <https://github.com/kykoubot/Zee-Userbot>
 # t.me/Dbzea & t.me/Storezeastore
 
 from os import remove
-from random import choice
+from secrets import choice
 
 from telethon.tl.functions.users import GetFullUserRequest
 
