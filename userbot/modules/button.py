@@ -106,7 +106,7 @@ CMD_HELP.update(
         \n  •  **NOTE :** Untuk menggunakan ini, anda memerlukan bot anda harus ada di grup/channel di mana anda menggunakan\
         \n\n  •  **Syntax :** `{cmd}ibutton` <text> [Name on button]<buttonurl:link you want to open>\
         \n  •  **Function : **Untuk membuat pesan button melalui inline\
-        \n  •  **Examples : **`{cmd}ibutton test [google]<buttonurl:https://www.google.com> [Channel]<buttonurl:https://t.me/Dbzea:same> [Support]<buttonurl:https://t.me/Dbzea>`\
+        \n  •  **Examples : **`{cmd}ibutton test [google]<buttonurl:https://www.google.com> [Channel]<buttonurl:https://t.me/Storezeastore:same> [Support]<buttonurl:https://t.me/Dbzea>`\
     "
     }
 )
