@@ -2,7 +2,7 @@
 # Licensed under GPLv3
 # Ported from Userge and refactored by @KenHV
 # FROM Man-Userbot
-# t.me/SharingUserbot
+# t.me/Dbzea
 
 import os
 import textwrap
@@ -53,7 +53,7 @@ async def memify(event):
     await event.client.send_file(
         entity=event.chat_id, file=final_image, reply_to=reply_msg
     )
-    await event.delete()
+    await xx.delete()
     os.remove(final_image)
     os.remove(input_file)
 
