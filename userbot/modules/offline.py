@@ -193,7 +193,7 @@ async def afk_on_pm(sender):
     global afk_start
     global afk_end
     back_alivee = datetime.now()
-    ZeeUBOT = sender.client.get_me()
+    ZeeUBOT = await sender.client.get_me()
     owner = ZeeUBOT.first_name
     afk_end = back_alivee.replace(microsecond=0)
     afk_since = "**Belum Lama**"
