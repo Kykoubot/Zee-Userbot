@@ -1,12 +1,20 @@
- <h1 align="center"><img src="./userbot/resources/GeezFire.gif" width="35px"> 𝐙𝐞𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 <img src="./userbot/resources/GeezFire.gif" width="35px"></h1>
+<h1 align="center"><img src="./userbot/resources/GeezFire.gif" width="35px"> 𝐙𝐞𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 <img src="./userbot/resources/GeezFire.gif" width="35px"></h1>
+
+___
+
+<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Gameplay.gif" alt="Mario Game" width="600" />
+
+___
+## Let's connect!
+<p>
+    <a href="https://t.me/zeafeya" target="blank"><img src="https://img.shields.io/badge/@zeafeya-30302f?style=flat&logo=telegram" /></a>
+    <a href="https://www.instagram.com/zeafeya" target="blank"><img src="https://img.shields.io/badge/@zeafeya-30302f?style=flat&logo=instagram" /></a>
+</p>
 
 
-<a href="https://t.me/dbzea"> <img src="https://img.shields.io/badge/Support Telegram-blue?&logo=telegram" alt="Group on Telegram" /> </a><br>
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/Kykoubot/Zee-Userbot)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green)](https://GitHub.com/kykoubot/Zee-Userbot/graphs/commit-activity)
-[![CodeFactor](https://www.codefactor.io/repository/github/Kykoubot/Zee-Userbot/badge)](https://www.codefactor.io/repository/github/Kykoubot/Zee-Userbot)
 [![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/kykoubot/Zee-Userbot/dashboard)
-[![Docker Pulls](https://img.shields.io/docker/pulls/mrismanaziz/man-userbot)](https://hub.docker.com/r/mrismanaziz/man-userbot/tags)
 [![GitHub Forks](https://img.shields.io/github/forks/kykoubot/Zee-Userbot?&logo=github)](https://github.com/kykoubot/Zee-Userbot/fork)
 [![GitHub Stars](https://img.shields.io/github/stars/kykoubot/Zee-Userbot?&logo=github)](https://github.com/kykoubot/Zee-Userbot/stargazers)
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=Kykoubot&repo=Zee-Userbot&theme=dark)
