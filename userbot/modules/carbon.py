@@ -193,7 +193,7 @@ async def crbn(event):
             return await edit_delete(
                 xxxx, "**Balas ke pesan atau file yang dapat dibaca**", 30
             )
-    xx = await Carbon(code=code, file_name="carbon_man", backgroundColor=col)
+    xx = await Carbon(code=code, file_name="carbon_zee", backgroundColor=col)
     await xxxx.delete()
     await event.reply(
         f"**Carbonised by** {from_user}",
