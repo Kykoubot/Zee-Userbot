@@ -112,9 +112,9 @@ async def typewriter(typew):
 
 
 @man_cmd(pattern="sange$")
-async def koc(e):
+async def _(event):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        e = await edit_or_reply(e, "SAYANGGGGGGGGG 💕")
+        e = await edit_or_reply(event, "SAYANGGGGGGGGG 💕")
         sleep(1)
         await e.edit("💝💘💓💗")
         sleep(1)
@@ -161,9 +161,9 @@ async def koc(e):
 
 
 @man_cmd(pattern="asss(?: |$)(.*)")
-async def typewriter(typew):
+async def _(typew):
     typew.pattern_match.group(1)
-    typew = await edit_or_reply(typew, "`Halloo guys,salam dulu biar sopan....`")
+    typew = await edit_or_reply(event, "`Halloo guys,salam dulu biar sopan....`")
     sleep(2)
     await typew.edit("`A`")
     await typew.edit("`As`")
