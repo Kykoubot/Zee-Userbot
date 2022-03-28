@@ -4,6 +4,8 @@
 # KALO COPAS JANGAN HAPUS INI KONTOLLLLL
 
 from time import sleep
+
+
 from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import man_cmd
 
@@ -112,9 +114,9 @@ async def typewriter(typew):
 
 
 @man_cmd(pattern="sange$")
-async def _(event):
+async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        e = await edit_or_reply(event, "SAYANGGGGGGGGG 💕")
+        e = await edit_or_reply(e, "SAYANGGGGGGGGG 💕")
         sleep(1)
         await e.edit("💝💘💓💗")
         sleep(1)
@@ -161,9 +163,9 @@ async def _(event):
 
 
 @man_cmd(pattern="asss(?: |$)(.*)")
-async def _(typew):
+async def typewriter(typew):
     typew.pattern_match.group(1)
-    typew = await edit_or_reply(event, "`Halloo guys,salam dulu biar sopan....`")
+    typew = await edit_or_reply(typew, "`Salam dulu biar sopan....`")
     sleep(2)
     await typew.edit("`A`")
     await typew.edit("`As`")
