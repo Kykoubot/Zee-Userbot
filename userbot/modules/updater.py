@@ -61,7 +61,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
             await edit_or_reply(
                 xx,
                 f"{txt}\n"
-                "**Kredensial Heroku tidak valid untuk deploy Man-Userbot dyno.**",
+                "**Kredensial Heroku tidak valid untuk deploy Zee-Userbot dyno.**",
             )
             return repo.__del__()
         try:
@@ -169,12 +169,12 @@ async def upstream(event):
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if conf == "deploy":
-        await xx.edit("`[HEROKU]: Update Deploy Man-Userbot Sedang Dalam Proses...`")
+        await xx.edit("`[HEROKU]: Update Deploy Zee-Userbot Sedang Dalam Proses...`")
         await deploy(xx, repo, ups_rem, ac_br, txt)
         return
 
     if changelog == "" and not force_update:
-        await edit_delete(xx, "**✥ Man-Userbot Sudah Versi Terbaru**")
+        await edit_delete(xx, "**✥ Zee-Userbot Sudah Versi Terbaru**")
         return repo.__del__()
 
     if conf == "" and not force_update:
@@ -207,9 +207,9 @@ CMD_HELP.update(
     {
         "update": f"**Plugin : **`update`\
         \n\n  •  **Syntax :** `{cmd}update`\
-        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Man-Userbot.\
+        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Zee-Userbot.\
         \n\n  •  **Syntax :** `{cmd}update deploy`\
-        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Man-Userbot.\
+        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Zee-Userbot.\
     "
     }
 )
