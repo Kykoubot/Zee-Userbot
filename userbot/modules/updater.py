@@ -3,13 +3,14 @@ This module updates the userbot based on upstream revision
 """
 
 import sys
+from base64 import b64decode
 from os import environ, execle, remove
 
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
 from userbot import CMD_HANDLER as cmd
-from userbot import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME, UPSTREAM_REPO_URL
+from userbot import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME
 from userbot.events import register
 from userbot.utils import edit_delete, edit_or_reply, man_cmd
 
@@ -60,7 +61,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
             await edit_or_reply(
                 xx,
                 f"{txt}\n"
-                "**Kredensial Heroku tidak valid untuk deploy Zee-Userbot dyno.**",
+                "**Kredensial Heroku tidak valid untuk deploy Man-Userbot dyno.**",
             )
             return repo.__del__()
         try:
@@ -128,7 +129,9 @@ async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
     xx = await edit_or_reply(event, "`Mengecek Pembaruan, Tunggu Sebentar...`")
     conf = event.pattern_match.group(1).strip()
-    off_repo = UPSTREAM_REPO_URL
+    off_repo = b64decode(
+        "QGRiemVh"
+    ).decode("utf-8")
     force_update = False
     try:
         txt = (
@@ -166,12 +169,12 @@ async def upstream(event):
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if conf == "deploy":
-        await xx.edit("`[HEROKU]: Update Deploy Zee-Userbot Sedang Dalam Proses...`")
+        await xx.edit("`[HEROKU]: Update Deploy Man-Userbot Sedang Dalam Proses...`")
         await deploy(xx, repo, ups_rem, ac_br, txt)
         return
 
     if changelog == "" and not force_update:
-        await edit_delete(xx, "**✥ Zee-Userbot Sudah Versi Terbaru**")
+        await edit_delete(xx, "**✥ Man-Userbot Sudah Versi Terbaru**")
         return repo.__del__()
 
     if conf == "" and not force_update:
@@ -204,9 +207,9 @@ CMD_HELP.update(
     {
         "update": f"**Plugin : **`update`\
         \n\n  •  **Syntax :** `{cmd}update`\
-        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Zee-Userbot.\
+        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Man-Userbot.\
         \n\n  •  **Syntax :** `{cmd}update deploy`\
-        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Zee-Userbot.\
+        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Man-Userbot.\
     "
     }
 )
