@@ -5,7 +5,7 @@
 #
 """ Userbot module containing commands for keeping notes. """
 
-from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, CMD_HANDLER as cmd
+from userbot import BOTLOG_CHATID, CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import edit_or_reply, edit_delete, man_cmd
 from userbot.events import register
 from asyncio import sleep
