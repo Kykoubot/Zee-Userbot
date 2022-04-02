@@ -1,8 +1,8 @@
 try:
-    from userbot.modules.sql_helper import BASE, SESSION
+    from userbot.modules.sql_helper import SESSION, BASE
 except ImportError:
     raise AttributeError
-from sqlalchemy import Column, Numeric, String, UnicodeText
+from sqlalchemy import Column, UnicodeText, Numeric, String
 
 
 class Notes(BASE):
@@ -43,20 +43,22 @@ def add_note(chat_id, keyword, reply, f_mesg_id):
         SESSION.add(adder)
         SESSION.commit()
         return True
-    rem = SESSION.query(Notes).get((str(chat_id), keyword))
-    SESSION.delete(rem)
-    SESSION.commit()
-    adder = Notes(str(chat_id), keyword, reply, f_mesg_id)
-    SESSION.add(adder)
-    SESSION.commit()
-    return False
+    else:
+        rem = SESSION.query(Notes).get((str(chat_id), keyword))
+        SESSION.delete(rem)
+        SESSION.commit()
+        adder = Notes(str(chat_id), keyword, reply, f_mesg_id)
+        SESSION.add(adder)
+        SESSION.commit()
+        return False
 
 
 def rm_note(chat_id, keyword):
     to_check = get_note(chat_id, keyword)
     if not to_check:
         return False
-    rem = SESSION.query(Notes).get((str(chat_id), keyword))
-    SESSION.delete(rem)
-    SESSION.commit()
-    return True
+    else:
+        rem = SESSION.query(Notes).get((str(chat_id), keyword))
+        SESSION.delete(rem)
+        SESSION.commit()
+        return True
