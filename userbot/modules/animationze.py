@@ -218,8 +218,8 @@ CMD_HELP.update(
     \n\n`{cmd}sange`\
     \nUsage: bocah sagapung\
     \n\n`{cmd}asss`\
-    \nUsage: assalamu'alaikum juga.
+    \nUsage: assalamu'alaikum.\
     \n\n`{cmd}shr`\
-    \nUsage: SAHUR ANJIR."
+    \nUsage: Sahur kak"
     }
 )
