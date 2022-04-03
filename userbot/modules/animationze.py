@@ -187,6 +187,30 @@ async def typewriter(typew):
     await typew.edit("**YANG GA JAWAB, FIX ATHEISS!!**")
 
 
+@man_cmd(pattern="shr(?: |$)(.*)")
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("`WOYYY PARA MANUSIA GA GUNA....`")
+    sleep(2)
+    await typew.edit("`S`")
+    await typew.edit("`Sa`")
+    await typew.edit("`Saa`")
+    await typew.edit("`Saahh`")
+    await typew.edit("`Saahhuu`")
+    await typew.edit("`Saahhuuu`")
+    await typew.edit("`Saahhuuuu`")
+    await typew.edit("`Saahhuuuuu`")
+    await typew.edit("`Saahhuuuuuur`")
+    await typew.edit("`Saahhuuuuuurr`")
+    await typew.edit("`Saahhuuuuuurrr`")
+    await typew.edit("`Saahhuuuuuurrrr`")
+    await typew.edit("`Saahhuuuuuurrrrr`")
+    await typew.edit("`Saahhuuuuuurrrrrr`")
+    await typew.edit("`Saahhuuuuuurrrrrrr`")
+    sleep(3)
+    await typew.edit("**SAHUR COK, UDAH BANYAK DOSA GA PUASA GOBLOK!!**")
+
+
 CMD_HELP.update(
     { 
         "animasi1": f"`{cmd}wibu` ; `{cmd}wibu2`\
@@ -194,6 +218,8 @@ CMD_HELP.update(
     \n\n`{cmd}sange`\
     \nUsage: bocah sagapung\
     \n\n`{cmd}asss`\
-    \nUsage: assalamu'alaikum juga."
+    \nUsage: assalamu'alaikum juga.
+    \n\n`{cmd}shr`\
+    \nUsage: SAHUR ANJIR."
     }
 )
