@@ -57,15 +57,15 @@ async def get_readable_time(seconds: int) -> str:
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(ping, "**･**")
-    await xx.edit("**･･**")
-    await xx.edit("**･･･**")
-    await xx.edit("**････**")
+    xx = await edit_or_reply(ping, "**↺1%**")
+    await xx.edit("**↺30%**")
+    await xx.edit("**↺67%**")
+    await xx.edit("**↺99%**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await xx.edit(
-        f"**PONG!!🏓**\n"
+        f"**100%!!**\n"
         f"▹ **Pinger** - `%sms`\n"
         f"▹ **Uptime -** `{uptime}` \n"
         f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
